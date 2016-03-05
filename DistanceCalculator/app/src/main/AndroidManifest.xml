@@ -25,7 +25,6 @@
         <service
             android:name=".MyService"
             android:enabled="true"
-            android:process="distancetracker"
             android:exported="true">
         </service>
     </application>
