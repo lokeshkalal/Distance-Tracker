@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.lokesh.distancecalculator.MainActivity">
+
+
+    <ToggleButton
+        android:id="@+id/start_service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:textOff="START TRACKING"
+        android:textOn="STOP TRACKING"
+        />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="match_parent"
+        android:background="?attr/selectableItemBackground"
+        android:layout_height="200dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/distace_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="0"
+                    android:textColor="#66BB6A"
+                    android:textSize="25dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textSize="12dp"
+                    android:textColor="#66BB6A"
+                    android:layout_height="wrap_content"
+                    android:text="m."/>
+            </LinearLayout>
+
+            <TextView
+
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#7f7f7f"
+                android:text="Total Distance Covered"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/service_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@android:color/holo_red_light"
+            android:text="stat"
+            android:layout_gravity="left|bottom"/>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
